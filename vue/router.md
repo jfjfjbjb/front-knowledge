@@ -257,7 +257,7 @@ router.go(-1)
 // 前进 3 步记录
 router.go(3)
 
-// 如果 history 记录不够用，那就默默地失败呗
+// 如果 history 记录不够用，就是失败
 router.go(-100)
 router.go(100)
 ```
@@ -402,9 +402,9 @@ router.go(100)
     ]
   })
   new Vue({
-    el:'#app',   //占地盘
+    el:'#app',
     router,
-    data:{      // 小金库
+    data:{  
       'msg':'Hello'
     }
   })
@@ -425,7 +425,7 @@ const router = new VueRouter({
 })
 ```
 
-### 第二钟 name重定向
+### 第二种 name重定向
 
 ```js
 const router = new VueRouter({

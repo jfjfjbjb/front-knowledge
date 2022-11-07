@@ -274,8 +274,8 @@ proxy: {
   host: '127.0.0.1',
   port: 9000,
   auth: : {
-    username: 'mikeymike',
-    password: 'rapunz3l'
+    username: 'user',
+    password: '123456'
   }
 },
 ```
@@ -466,7 +466,7 @@ function errorHandle(err, reject) {
 (2)引入使用
 ```js
 // 引入使用
-import {get, post} from 'request.js'
+import {post} from 'request.js'
 post('/getMainInfo', {id: 123}, true)
 .then(res => {
   console.log(res)
